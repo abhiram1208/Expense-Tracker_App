@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{%load static %}
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>EXPENZO</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="{% static 'css/dash.css' %}">
+
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <a class="header__logo">EXPENZO</a>
+        <nav class="header__menu">
+            <ul class="header__menu__list">
+                <li class="header__menu__item"><a class="header__menu__link" href="/view_user">user</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/reply">complaints</a></li>
+                <li class="header__menu__item"><a class="header__menu__link" href="/">logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="sliders-container">
+<ul class="pagination">
+            <li class="pagination__item">
+                        <a class="pagination__button"></a></li>
+            <li class="pagination__item"><a class="pagination__button"></a></li>
+            <li class="pagination__item"><a class="pagination__button"></a></li>
+            <li class="pagination__item"><a class="pagination__button"></a></li>
+        </ul>
+    </main>
+  
+</div>
+  <script src='https://rawgit.com/lmgonzalves/momentum-slider/master/dist/momentum-slider.min.js'></script>
+  <script  src="{% static 'js/dash.js' %}"></script>
+
+</body>
+</html>
+            
