@@ -15,7 +15,7 @@ class _ChatbotScreenState extends State<ChatbotScreen> {
   List<Map<String, String>> messages = [];
   bool isLoading = false;
   final Dio dio = Dio();
-  String apiKey = "AIzaSyAuqBkpX7t2RkU-m2rTJAFjV7KXd01rjQQ";
+  String apiKey = API_KEY;
 
   Future<void> sendMessage(String message) async {
     setState(() {
